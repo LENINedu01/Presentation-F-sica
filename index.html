@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación RSU - Física Aplicada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Cargando presentación...</p>
+        <button id="btnEmpezar" onclick="iniciarPresentacion()">EMPEZAR</button>
+
+    </div>
+
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li onclick="mostrarSeccion('intro')">1. Introducción</li>
+            <li onclick="mostrarSeccion('justificacion')">2. Justificación</li>
+            <li onclick="mostrarSeccion('objetivos')">3. Objetivos</li>
+            <li onclick="mostrarSeccion('actividades')">4. Actividades</li>
+            <li onclick="mostrarSeccion('actividad1')">5. Cinématica</li>
+            <li onclick="mostrarSeccion('actividad2')">6. Dinámica</li>
+            
+           
+            <li onclick="mostrarSeccion('paginaweb')">7. Página Web</li>
+            <li onclick="mostrarSeccion('evaluacion')">8. Evaluación</li>
+            <li onclick="mostrarSeccion('conclusiones')">9. Conclusiones</li>
+            <li onclick="mostrarSeccion('frase')">10. Frase Final</li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+
+        <!-- INTRO -->
+        <section id="intro" class="seccion activa">
+            <h1>INTRODUCCIÓN</h1>
+            <p>
+                La física aplicada permite entender el mundo real a través de principios científicos.
+                En este proyecto de RSU buscamos transmitir esos conocimientos de manera didáctica,
+                integrando conceptos con tecnología y dinámicas prácticas.
+            </p>
+            <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f" class="img-centro">
+        </section>
+
+        <!-- JUSTIFICACION -->
+        <section id="justificacion" class="seccion">
+            <h1>JUSTIFICACIÓN</h1>
+            <p>
+                Los estudiantes de quinto de secundaria, se encuentran en la etapa de adolescencia, 
+                un periodo descrito por la psicología como una fase crucial que según teorías como la de Erik Erikson, 
+               atraviesan el estadio de Identidad vs. Confusión de roles, donde buscan definirse, explorar intereses y reforzar su autonomía.
+
+              A nivel cognitivo, de acuerdo con Jean Piaget, ya operan mayormente en el estadio de las Operaciones Formales, lo que les permite procesar conceptos científicos complejos, crear hipótesis, analizar causas y consecuencias, y vincular la teoría con situaciones reales.
+              En este contexto, las dinámicas prácticas y experiencias interactivas se vuelven altamente efectivas, pues responden a necesidades psicológicas clave de esta edad:
+
+              -Estimulación sensorial y cognitiva     -Participación activa         -Necesidad de reconocimiento
+              -Aprendizaje significativo basado en la experiencia           -Motivación intrínseca y exploración personal.
+
+            </p>
+            <img src="https://pymstatic.com/2470/conversions/psicologia-clinica-wide_webp.webp" class="img-centro">
+        </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="seccion">
+            <h1>OBJETIVOS</h1>
+
+            <h2>Objetivo General</h2>
+            <p>
+                Promover el aprendizaje y la comprensión de la física aplicada al mundo real en estudiantes
+                de nivel escolar, integrando herramientas tecnológicas y enfoques propios de la Ingeniería
+                de Sistemas para fortalecer su interés científico y su capacidad de relacionar la teoría con
+                situaciones prácticas.
+            </p>
+
+            <h2>Objetivos Específicos</h2>
+            <ul class="lista-objetivos">
+                <li>Presentar ejemplos concretos de física aplicada en áreas vinculadas a la Ingeniería de Sistemas.</li>
+                <li>Desarrollar actividades prácticas e interactivas basadas en Cinemática y Dinámica.</li>
+                <li>Fomentar la vocación científica mediante recursos digitales y páginas web didácticas.</li>
+                <li>Evaluar el impacto educativo a través de participación y retroalimentación estudiantil.</li>
+            </ul>
+
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="img-centro">
+        </section>
+
+        <!-- ACTIVIDADES -->
+        <section id="actividades" class="seccion">
+            <h1>ACTIVIDADES</h1>
+            <img src="imagen/actividad.png" class="img-centro-grande">
+        </section>
+
+        <!-- ACTIVIDAD 1 -->
+        <section id="actividad1" class="seccion">
+            <h1>CINEMÁTICA</h1>
+            <img src="imagen/Diseño sin título (23).png" class="img-centro-grande">
+        </section>
+
+        <!-- ACTIVIDAD 2 -->
+        <section id="actividad2" class="seccion">
+            <h1>DINÁMICA</h1>
+            <img src="imagen/Diseño sin título (26).png" class="img-centro-grande">
+        </section>
+
+        <!-- ACTIVIDAD 3 -->
+        <section id="actividad3" class="seccion">
+            <h1>FUERZAS</h1>
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5f1d2d87" class="img-centro-grande">
+        </section>
+
+        <!-- ACTIVIDAD 4 -->
+        <section id="actividad4" class="seccion">
+            <h1>TRABAJO Y ENERGÍA</h1>
+            <img src="https://images.unsplash.com/photo-1526403226206-1d81e46c7a76" class="img-centro-grande">
+        </section>
+
+        <!-- PÁGINA WEB -->
+        <section id="paginaweb" class="seccion">
+            <h1>PÁGINA WEB</h1>
+
+            <div class="web-contenedor">
+                <img src="imagen/LA SALLE (1).png" class="img-derecha">
+                <div class="web-centro">
+                    <img src="imagen/LA SALLE (2).png" class="img-centro">
+                </div>
+            </div>
+
+            <p class="web-link">
+                Enlace de la Página Web:  
+                <a href="#" target="_blank">https://leninedu01.github.io/Ingenieria2025/</a>
+            </p>
+        </section>
+
+        <!-- EVALUACIÓN -->
+        <section id="evaluacion" class="seccion">
+            <h1>COMPROBACIÓN DE LO APRENDIDO</h1>
+            <img src="imagen/Diseño sin título (28).png" class="img-centro-grande">
+        </section>
+
+        <!-- CONCLUSIONES -->
+        <section id="conclusiones" class="seccion">
+            <h1>CONCLUSIONES</h1>
+
+            <p>
+                La física, aplicada a situaciones reales, permite a los estudiantes comprender de manera profunda
+                cómo funciona el mundo que los rodea. Mediante actividades prácticas y el uso de tecnología,
+                se logra que los conceptos sean más accesibles y significativos, fortaleciendo su pensamiento
+                científico y su capacidad de resolver problemas.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" class="img-centro-grande">
+        </section>
+
+        <!-- FRASE FINAL -->
+        <section id="frase" class="seccion">
+            <h1>FRASE FINAL</h1>
+            <p class="frase">
+                “La ciencia no solo explica el mundo… te da el poder para transformarlo.”
+            </p>
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564" class="img-centro-grande">
+        </section>
+
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
